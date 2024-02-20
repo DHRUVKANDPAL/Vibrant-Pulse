@@ -94,7 +94,7 @@ button{
     box-shadow: 0 0 5px cyan,
     0 0 25px cyan;
 }
-@media(max-width:580px){
+@media(min-width:400px) and (max-width:580px){
     .dark-mode button{
         font-size:1.3rem;
         padding: 1rem 2rem;
@@ -104,8 +104,30 @@ button{
         transform: scale(1.2);
         transition: box-shadow 0.8s ease-in, transform 0.2s linear;
         box-shadow: 0 0 5px cyan,
-        0 0 25px cyan, 0 0 50px cyan;
+        0 0 25px cyan, 0 0 50px cyan,
+        0 0 100px cyan, 0 0 200px cyan, 0 0 400px cyan ,
+        80px 80px 1000px rgb(110, 216, 234,0.5),
+        -80px 80px 1000px rgb(110, 216, 234,0.5)
+        ,80px -80px 1000px rgb(110, 216, 234,0.5),
+        -80px -80px 1000px rgb(110, 216, 234,0.5) ,
+        -80px 0px 1000px rgb(110, 216, 234,0.5)
+        ,80px 0px 1000px rgb(110, 216, 234,0.5),
+        0px 80px 1000px rgb(110, 216, 234,0.5),
+        0px -80px 1000px rgb(110, 216, 234,0.5);
         
+    }
+}
+@media(max-width:400px){
+    .dark-mode button{
+        font-size:1.3rem;
+        padding: 1rem 2rem;
+        border-radius: 0.5rem;
+    }
+    .dark-mode button:hover{
+        transform: scale(1.2);
+        transition: box-shadow 0.8s ease-in, transform 0.2s linear;
+        box-shadow: 0 0 5px cyan,
+        0 0 25px cyan, 0 0 30px cyan;
         
     }
 }
