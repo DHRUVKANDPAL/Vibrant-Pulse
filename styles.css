@@ -103,8 +103,7 @@ button{
     .dark-mode button:hover{
         transform: scale(1.2);
         transition: box-shadow 0.8s ease-in, transform 0.2s linear;
-        box-shadow: 0 0 5px cyan,
-        0 0 25px cyan;
+        
         
     }
 }
